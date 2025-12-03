@@ -1,0 +1,101 @@
+{
+    "hero": {
+        "headline": "Your Safe & Authentic Layover in Seoul",
+        "subHeadline": "Meet verified locals, explore hidden gems, and stay safe with our real-time tracking system.",
+        "cta": "Start Your Journey"
+    },
+    "safety": {
+        "title": "We watch your back",
+        "description": "Real-time tracking and Safe Zones ensure your journey is worry-free.",
+        "socialProof": "Trusted by crews from 50+ major airlines"
+    },
+    "howItWorks": {
+        "title": "How to LAYO",
+        "subtitle": "Your perfect layover in 3 simple steps.",
+        "step1": {
+            "title": "Find a friend",
+            "desc": "Match with a local who shares your vibe."
+        },
+        "step2": {
+            "title": "Meet safely",
+            "desc": "Meet at a Safe Zone near your hotel."
+        },
+        "step3": {
+            "title": "Enjoy the moment",
+            "desc": "Make the most of your short stay."
+        }
+    },
+    "localMate": {
+        "title": "Meet Your Seoulmate",
+        "subtitle": "Not a tour guide, but a friend in Seoul.",
+        "badge": "This Month's Locals",
+        "card1": {
+            "name": "Minji",
+            "tags": [
+                "Cafe Hopping",
+                "Photography"
+            ],
+            "desc": "I know the best hidden cafes in Seongsu."
+        },
+        "card2": {
+            "name": "Hyun",
+            "tags": [
+                "Night Views",
+                "Driving"
+            ],
+            "desc": "Let's drive to Namsan for the best view."
+        },
+        "card3": {
+            "name": "Soo",
+            "tags": [
+                "Shopping",
+                "Fashion"
+            ],
+            "desc": "Personal shopper for trendy K-fashion."
+        },
+        "card4": {
+            "name": "Jun",
+            "tags": [
+                "Foodie",
+                "Local Markets"
+            ],
+            "desc": "Gwangjang Market expert. Hungry?"
+        }
+    },
+    "experience": {
+        "food": {
+            "title": "Street Food Tour",
+            "desc": "Taste the soul of Seoul at night markets."
+        },
+        "culture": {
+            "title": "Modern Palace",
+            "desc": "Where tradition meets the city skyline."
+        },
+        "nightlife": {
+            "title": "Crew Lounge",
+            "desc": "Connect with fellow crews in exclusive spots."
+        },
+        "smartShopping": {
+            "title": "Smart Shopping",
+            "desc": "Curated shopping guide for crew members."
+        }
+    },
+    "footer": {
+        "readyTitle": "Ready for your Layover?",
+        "readyDesc": "Download the app and start exploring.",
+        "brandDesc": "Your trusted companion for safe and authentic layovers in Seoul.",
+        "company": "Company",
+        "about": "About Us",
+        "careers": "Careers",
+        "press": "Press",
+        "support": "Support",
+        "help": "Help Center",
+        "safety": "Safety Center",
+        "terms": "Terms of Service",
+        "legal": "Legal",
+        "privacy": "Privacy Policy",
+        "cookies": "Cookie Policy",
+        "licenses": "Licenses",
+        "copyright": "© 2024 Seoulmate. All rights reserved."
+    }
+}

@@ -1,0 +1,118 @@
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 65%;
+    animation: zoomPan 20s infinite alternate ease-in-out;
+}
+
+@keyframes zoomPan {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(11, 13, 20, 0.3), var(--color-midnight-black));
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: var(--spacing-xl);
+    z-index: 1;
+    width: 100%;
+}
+
+.hero-title {
+    font-size: var(--font-size-hero);
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    color: var(--color-neon-lime);
+    margin-bottom: var(--spacing-md);
+    text-shadow: var(--shadow-hard);
+    line-height: 1;
+    opacity: 0.8;
+}
+
+.hero-headline {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+    opacity: 0.85;
+}
+
+.hero-subheadline {
+    font-size: var(--font-size-body);
+    margin-bottom: var(--spacing-2xl);
+    color: rgba(245, 245, 245, 0.8);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+.cta-button {
+    background-color: var(--color-neon-lime);
+    color: var(--color-midnight-black);
+    border: var(--border-width-thick) solid var(--color-midnight-black);
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-hard);
+    transition: transform 0.1s, box-shadow 0.1s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-hard-hover);
+}
+
+.cta-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        padding: var(--spacing-lg);
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+        padding: var(--spacing-md) var(--spacing-xl);
+    }
+}
