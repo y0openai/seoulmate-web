@@ -25,7 +25,9 @@ const Hero = () => {
                 className="hero-content"
                 style={{ y: textY, opacity }}
             >
-                <h1 className="hero-title">LAYO</h1>
+                <h1 className="hero-title">
+                    LAYO<span className="hero-title-subtle">VER</span>
+                </h1>
                 <h2 className="hero-headline">{t('hero.headline')}</h2>
                 <p className="hero-subheadline">{t('hero.subHeadline')}</p>
                 <a href="https://seoulmate-app.web.app/login" className="cta-button">{t('hero.cta')}</a>

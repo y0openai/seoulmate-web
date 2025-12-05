@@ -63,6 +63,24 @@
     opacity: 0.8;
 }
 
+.hero-title-subtle {
+    font-size: 0.45em;
+    font-weight: 500;
+    opacity: 0.35;
+    letter-spacing: 0.02em;
+    margin-left: -0.08em;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.05em;
+    text-shadow: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.hero-title:hover .hero-title-subtle {
+    opacity: 0.65;
+    transform: translateX(2px);
+}
+
 .hero-headline {
     font-size: var(--font-size-h1);
     font-weight: 700;

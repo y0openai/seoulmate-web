@@ -6,20 +6,6 @@ import './Experience.css';
 
 const experiences = [
     {
-        id: 1,
-        image: '/assets/food.png',
-        titleKey: 'experience.food.title',
-        descKey: 'experience.food.desc',
-        tag: 'Food'
-    },
-    {
-        id: 2,
-        image: '/assets/culture.png',
-        titleKey: 'experience.culture.title',
-        descKey: 'experience.culture.desc',
-        tag: 'Culture'
-    },
-    {
         id: 3,
         image: '/assets/hero.png',
         titleKey: 'experience.nightlife.title',
@@ -34,6 +20,20 @@ const experiences = [
         descKey: 'experience.smartShopping.desc',
         tag: 'Shopping',
         video: '/assets/로컬_가이드_승무원_쇼핑_돕기.mp4'
+    },
+    {
+        id: 1,
+        image: '/assets/food.png',
+        titleKey: 'experience.food.title',
+        descKey: 'experience.food.desc',
+        tag: 'Food'
+    },
+    {
+        id: 2,
+        image: '/assets/culture.png',
+        titleKey: 'experience.culture.title',
+        descKey: 'experience.culture.desc',
+        tag: 'Culture'
     }
 ];
 
