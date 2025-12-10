@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import './Hero.css';
+import logoLayo from '../assets/logo_layo.png';
 
 const Hero = () => {
     const { t } = useTranslation();
@@ -25,6 +26,7 @@ const Hero = () => {
                 className="hero-content"
                 style={{ y: textY, opacity }}
             >
+                <img src={logoLayo} alt="LAYO Logo" className="hero-logo" />
                 <h1 className="hero-title">
                     LAYO<span className="hero-title-subtle">VER</span>
                 </h1>
