@@ -94,9 +94,9 @@ const Experience = () => {
                     <div className="video-overlay-gradient"></div>
 
                     <div className="video-content-overlay">
-                        <span className="video-label">CREW TESTIMONIAL</span>
-                        <h3 className="video-headline">Real Experience</h3>
-                        <p className="video-description">"Seoulmate, they made my layover unforgettable."</p>
+                        <span className="video-label">{t('experience.videoLabel')}</span>
+                        <h3 className="video-headline">{t('experience.videoHeadline')}</h3>
+                        <p className="video-description">"{t('experience.videoDescription')}"</p>
                     </div>
 
                     <button className="video-unmute-btn" onClick={(e) => {

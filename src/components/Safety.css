@@ -41,36 +41,71 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
-    padding: var(--spacing-md) var(--spacing-lg);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--border-radius-soft);
+    padding: var(--spacing-md) var(--spacing-xl);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* More subtle border */
+    border-radius: 16px;
+    /* Smoother rounding */
     font-weight: 600;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-body);
+    /* Slightly larger text */
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(10px);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .badge-icon {
-    font-size: 24px;
-    filter: contrast(1.2) brightness(1.1);
+    width: 24px;
+    height: 24px;
+    stroke-width: 2px;
 }
+
+/* Premium Icon Colors */
+.icon-lime {
+    color: var(--color-neon-lime);
+    filter: drop-shadow(0 0 8px rgba(204, 255, 0, 0.4));
+}
+
+.icon-purple {
+    color: var(--color-electric-purple);
+    filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.4));
+}
+
+.icon-red {
+    color: #ff4d4d;
+    /* Custom Safety Red */
+    filter: drop-shadow(0 0 8px rgba(255, 77, 77, 0.4));
+}
+
 
 .safety-visual {
     position: relative;
+    /* Clean up any rotation default unless intended */
 }
 
 .map-card {
     background: #000;
-    box-shadow: 0 0 30px rgba(0, 87, 255, 0.2);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    /* Deep shadow */
     position: relative;
     overflow: hidden;
-    border-radius: var(--border-radius-md);
+    border-radius: 24px;
+    /* Match branding */
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .map-card img {
     width: 100%;
     height: auto;
     display: block;
-    filter: contrast(1.2) brightness(1.1);
+    opacity: 0.8;
+    /* Slightly fade map for text readability if needed, or keeping it distinct */
 }
 
 /* Radar Pulse Animation */
@@ -83,7 +118,7 @@
     background: var(--color-neon-lime);
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 10px var(--color-neon-lime);
+    box-shadow: 0 0 15px var(--color-neon-lime);
     z-index: 2;
 }
 
@@ -139,7 +174,8 @@
     font-size: var(--font-size-small);
     color: rgba(245, 245, 245, 0.5);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    /* Increased letter spacing for premium feel */
 }
 
 @media (max-width: 900px) {

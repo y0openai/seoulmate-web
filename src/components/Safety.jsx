@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { MapPin, ShieldCheck, Siren } from 'lucide-react';
 import './Safety.css';
 
 const Safety = () => {
@@ -20,15 +21,15 @@ const Safety = () => {
                     <p className="safety-description">{t('safety.description')}</p>
                     <div className="safety-badges">
                         <div className="badge">
-                            <span className="badge-icon">📍</span>
+                            <MapPin className="badge-icon icon-lime" />
                             <span>Real-time Tracking</span>
                         </div>
                         <div className="badge">
-                            <span className="badge-icon">🛡️</span>
+                            <ShieldCheck className="badge-icon icon-purple" />
                             <span>Safe Zones</span>
                         </div>
                         <div className="badge">
-                            <span className="badge-icon">🆘</span>
+                            <Siren className="badge-icon icon-red" />
                             <span>Emergency SOS</span>
                         </div>
                     </div>
