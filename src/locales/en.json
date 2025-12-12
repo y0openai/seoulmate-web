@@ -1,6 +1,6 @@
 {
     "hero": {
-        "headline": "Your Safe & Authentic Layover in Seoul",
+        "headline": "Seoul: Perfected",
         "subHeadline": "Meet verified locals, explore hidden gems, and stay safe with our real-time tracking system.",
         "cta": "Start Your Journey"
     },
@@ -11,18 +11,22 @@
     },
     "howItWorks": {
         "title": "How to LAYO",
-        "subtitle": "Your perfect layover in 3 simple steps.",
-        "step1": {
-            "title": "Find a friend",
-            "desc": "Match with a local who shares your vibe."
+        "subtitle": "Your perfect layover in 4 simple steps.",
+        "match": {
+            "title": "Find Experiences",
+            "desc": "Discover unique local vibes curated just for crew."
         },
-        "step2": {
-            "title": "Meet safely",
-            "desc": "Meet at a Safe Zone near your hotel."
+        "meet": {
+            "title": "Meet Local",
+            "desc": "Connect with verified Seoulmates instantly."
         },
-        "step3": {
-            "title": "Enjoy the moment",
-            "desc": "Make the most of your short stay."
+        "safety": {
+            "title": "Share My Safety",
+            "desc": "Real-time location sharing for your peace of mind."
+        },
+        "explore": {
+            "title": "Discover Seoul",
+            "desc": "Dive into the night. It's time to explore."
         }
     },
     "localMate": {
@@ -63,6 +67,8 @@
         }
     },
     "experience": {
+        "sectionTitle": "Curated for Crew",
+        "sectionSubtitle": "Short on time? We've got you covered.",
         "food": {
             "title": "Street Food Tour",
             "desc": "Taste the soul of Seoul at night markets."
@@ -72,8 +78,8 @@
             "desc": "Where tradition meets the city skyline."
         },
         "nightlife": {
-            "title": "Crew Lounge",
-            "desc": "Connect with fellow crews in exclusive spots."
+            "title": "Seoul After Dark",
+            "desc": "Discover sparkling city views and vibrant night markets."
         },
         "smartShopping": {
             "title": "Smart Shopping",

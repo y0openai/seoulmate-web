@@ -3,40 +3,37 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import './HowItWorks.css';
 
-// Import Videos
-import vMatch from '../assets/videos/v_match.mp4';
-import vMeet from '../assets/videos/v_meet.mp4';
-import vSafety from '../assets/videos/v_safety.mp4';
-import vExplore from '../assets/videos/v_explore.mp4';
-
+// Video paths are now referenced directly from public/assets/videos
 const steps = [
     {
         id: 1,
-        title: "Find Experiences",
-        desc: "Discover unique local vibes curated just for crew.",
-        video: vMatch
+        titleKey: "howItWorks.match.title",
+        descKey: "howItWorks.match.desc",
+        video: '/assets/videos/v_match.mp4'
     },
     {
         id: 2,
-        title: "Meet Local",
-        desc: "Connect with verified Seoulmates instantly.",
-        video: vMeet
+        titleKey: "howItWorks.meet.title",
+        descKey: "howItWorks.meet.desc",
+        video: '/assets/videos/v_meet.mp4'
     },
     {
         id: 3,
-        title: "Share My Safety",
-        desc: "Real-time location sharing for your peace of mind.",
-        video: vSafety // Key Feature
+        titleKey: "howItWorks.safety.title",
+        descKey: "howItWorks.safety.desc",
+        video: '/assets/videos/v_safety.mp4' // Key Feature
     },
     {
         id: 4,
-        title: "Discover Seoul",
-        desc: "Dive into the night. It's time to explore.",
-        video: vExplore
+        titleKey: "howItWorks.explore.title",
+        descKey: "howItWorks.explore.desc",
+        video: '/assets/videos/v_explore.mp4'
     }
 ];
 
 const ParallaxSection = ({ step, index }) => {
+    const { t } = useTranslation();
+
     return (
         <section className="parallax-section">
             {/* Background Video */}
@@ -58,8 +55,8 @@ const ParallaxSection = ({ step, index }) => {
                 viewport={{ once: false, amount: 0.5 }}
             >
                 <span className="parallax-step-number">Step 0{step.id}</span>
-                <h2 className="parallax-title">{step.title}</h2>
-                <p className="parallax-desc">{step.desc}</p>
+                <h2 className="parallax-title">{t(step.titleKey)}</h2>
+                <p className="parallax-desc">{t(step.descKey)}</p>
             </motion.div>
         </section>
     );

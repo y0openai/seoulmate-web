@@ -54,9 +54,62 @@ const Experience = () => {
     return (
         <section className="experience-section">
             <div className="experience-header">
-                <h2 className="experience-title">Curated for Crew</h2>
-                <p className="experience-subtitle">Short on time? We've got you covered.</p>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                >
+                    <h2 className="experience-title">{t('experience.sectionTitle')}</h2>
+                    <p className="experience-subtitle">{t('experience.sectionSubtitle')}</p>
+                </motion.div>
             </div>
+
+            {/* Featured Video Section - Cinematic Experience */}
+            <motion.div
+                className="featured-video-wrapper"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }}
+            >
+                <div className="video-glow-effect"></div>
+                <div className="featured-video-container">
+                    <video
+                        className="featured-main-video"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        poster="/assets/smart_shopping.png" // Fallback image
+                    >
+                        {/* 
+                            TODO: Replace with actual video file path. 
+                            Users should upload their file to src/assets/videos/ 
+                        */}
+                        <source src="/assets/videos/crew_interview.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div className="video-overlay-gradient"></div>
+
+                    <div className="video-content-overlay">
+                        <span className="video-label">CREW TESTIMONIAL</span>
+                        <h3 className="video-headline">Real Experience</h3>
+                        <p className="video-description">"Seoulmate, they made my layover unforgettable."</p>
+                    </div>
+
+                    <button className="video-unmute-btn" onClick={(e) => {
+                        const video = e.target.closest('.featured-video-container').querySelector('video');
+                        video.muted = !video.muted;
+                    }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                        </svg>
+                    </button>
+                </div>
+            </motion.div>
 
             <div className="experience-carousel">
                 {experiences.map((exp, index) => (
@@ -65,7 +118,7 @@ const Experience = () => {
                         className="experience-card"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: index * 0.2 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }} // Staggered after video
                         viewport={{ once: true }}
                         onClick={() => handleCardClick(exp.video)}
                         style={{ cursor: exp.video ? 'pointer' : 'default' }}
