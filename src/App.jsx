@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import Hero from './components/Hero';
+import FounderStory from './components/FounderStory';
 import HowItWorks from './components/HowItWorks';
 import Safety from './components/Safety';
 import Experience from './components/Experience';
@@ -35,6 +36,7 @@ function App() {
         <Hero />
         <HowItWorks />
         <Safety />
+        <FounderStory />
         <Experience />
         <LocalMate />
       </main>

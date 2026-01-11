@@ -1,0 +1,211 @@
+/* Main section container */
+.founder-story-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-4xl) var(--spacing-lg);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* Quote mark icon - large, elegant */
+.founder-story-quote-mark {
+    font-size: clamp(60px, 12vw, 120px);
+    color: var(--color-neon-lime);
+    opacity: 0.8;
+    margin-bottom: var(--spacing-lg);
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(60px, 12vw, 120px);
+    height: clamp(60px, 12vw, 120px);
+}
+
+/* Use CSS to create quote mark */
+.founder-story-quote-mark::before {
+    content: '"';
+    display: block;
+    line-height: 0.8;
+}
+
+/* Quote text wrapper */
+.founder-story-quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* Quote text - large, emotional, primary focus */
+.founder-story-quote {
+    font-size: clamp(18px, 4vw, 28px);
+    font-weight: 600;
+    color: rgba(245, 245, 245, 0.95);
+    line-height: 1.6;
+    margin: 0;
+    letter-spacing: -0.01em;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Empty lines (spacing) */
+.founder-story-quote:empty {
+    height: var(--spacing-md);
+}
+
+/* Author attribution - secondary hierarchy */
+.founder-story-author {
+    font-size: clamp(13px, 2.5vw, 16px);
+    font-weight: 500;
+    color: rgba(245, 245, 245, 0.7);
+    margin: var(--spacing-lg) 0 var(--spacing-xl) 0;
+    letter-spacing: 0.5px;
+    font-style: normal;
+}
+
+/* Profile image - large, bold circular with strong glow */
+.founder-story-image {
+    width: clamp(180px, 35vw, 280px);
+    height: clamp(180px, 35vw, 280px);
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: var(--spacing-2xl) 0;
+    box-shadow: 0 12px 48px rgba(190, 255, 0, 0.25),
+                0 0 80px rgba(190, 255, 0, 0.15);
+    border: 3px solid var(--color-neon-lime);
+}
+
+/* Divider line - gradient style */
+.founder-story-divider {
+    width: 60px;
+    height: 1.5px;
+    background: linear-gradient(90deg,
+        transparent,
+        var(--color-neon-lime),
+        transparent
+    );
+    margin: var(--spacing-xl) 0;
+    transform-origin: center;
+}
+
+/* Values - tertiary information */
+.founder-story-values {
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: 600;
+    color: var(--color-neon-lime);
+    margin: 0;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    word-spacing: var(--spacing-lg);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    .founder-story-section {
+        padding: var(--spacing-3xl) var(--spacing-md);
+        max-width: 100%;
+    }
+
+    .founder-story-quote-mark {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .founder-story-quote {
+        font-size: clamp(16px, 4vw, 24px);
+    }
+
+    .founder-story-author {
+        font-size: clamp(12px, 2.5vw, 14px);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .founder-story-image {
+        width: clamp(140px, 28vw, 200px);
+        height: clamp(140px, 28vw, 200px);
+        margin: var(--spacing-xl) 0;
+        border: 2.5px solid var(--color-neon-lime);
+    }
+
+    .founder-story-divider {
+        width: 50px;
+        margin: var(--spacing-lg) 0;
+    }
+
+    .founder-story-values {
+        font-size: clamp(11px, 2vw, 13px);
+        letter-spacing: 1px;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .founder-story-section {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+
+    .founder-story-quote-mark {
+        font-size: clamp(48px, 10vw, 80px);
+        width: clamp(48px, 10vw, 80px);
+        height: clamp(48px, 10vw, 80px);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .founder-story-quote-wrapper {
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .founder-story-quote {
+        font-size: clamp(15px, 4vw, 20px);
+        line-height: 1.5;
+    }
+
+    .founder-story-author {
+        font-size: clamp(11px, 2.5vw, 12px);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .founder-story-image {
+        width: clamp(120px, 32vw, 160px);
+        height: clamp(120px, 32vw, 160px);
+        margin: var(--spacing-lg) 0;
+        border: 2px solid var(--color-neon-lime);
+    }
+
+    .founder-story-divider {
+        width: 40px;
+        margin: var(--spacing-md) 0;
+    }
+
+    .founder-story-values {
+        font-size: clamp(10px, 2vw, 12px);
+        letter-spacing: 0.8px;
+        word-spacing: var(--spacing-md);
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+    .founder-story-section {
+        transition: none;
+    }
+
+    .founder-story-quote-mark,
+    .founder-story-quote,
+    .founder-story-author,
+    .founder-story-divider,
+    .founder-story-values {
+        animation: none;
+    }
+}

@@ -239,8 +239,9 @@
 }
 
 @media (max-width: 768px) {
+    /* Hide entire Experience section on mobile */
     .experience-section {
-        padding: var(--spacing-2xl) var(--spacing-md);
+        display: none;
     }
 
     .experience-carousel {
@@ -253,11 +254,11 @@
         min-width: 85vw;
         flex: 0 0 85vw;
     }
-    
+
     .video-headline {
         font-size: 20px;
     }
-    
+
     .video-content-overlay {
         bottom: 20px;
         left: 20px;

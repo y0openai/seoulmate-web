@@ -2,7 +2,10 @@
     "hero": {
         "headline": "Seoul: Perfected",
         "subHeadline": "Meet trusted local friends and find hidden spots. Stay safe with real-time location sharing.",
-        "cta": "Start Now"
+        "cta": "Start Now",
+        "founderStoryQuote": "I spent 15 years as a flight attendant.\nEvery layover had the same question:\n\n'How do I make these 24 hours count?'\n\nGuidebooks don't answer that.\nMaps don't answer that.\n\nYou need someone who lives there.\nSomeone who understands your 12 to 48 hours.\n\nThat's why I built LAYO.",
+        "founderStoryAuthor": "— Founder, LAYO",
+        "founderStoryValues": "Safety | Experience | Trust"
     },
     "safety": {
         "title": "Leave Safety to Us,\nJust Enjoy the Trip",
