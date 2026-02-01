@@ -3,8 +3,8 @@
         "headline": "Seoul: Perfected",
         "subHeadline": "Meet trusted local friends and find hidden spots. Stay safe with real-time location sharing.",
         "cta": "Start Now",
-        "founderStoryQuote": "I spent 15 years as a flight attendant.\nEvery layover had the same question:\n\n'How do I make these 24 hours count?'\n\nGuidebooks don't answer that.\nMaps don't answer that.\n\nYou need someone who lives there.\nSomeone who understands your 12 to 48 hours.\n\nThat's why I built LAYO.",
-        "founderStoryAuthor": "— Founder, LAYO",
+        "founderStoryQuote": "One was a veteran. One was a junior.\nBut we shared the same frustration with layovers.\n\nThe real local spots that never show up in searches.\nThat vibe only locals know.\n\n'If what we want doesn't exist, why not build it ourselves?'\n\nA small idea from two flight attendants\nbecame LAYO—for crew around the world.",
+        "founderStoryAuthor": "— Co-founders, LAYO",
         "founderStoryValues": "Safety | Experience | Trust"
     },
     "safety": {
@@ -91,6 +91,35 @@
         "videoLabel": "Crew Review",
         "videoHeadline": "Unforgettable",
         "videoDescription": "Seoulmate made my layover unforgettable."
+    },
+    "meetTheTeam": {
+        "title": "Meet the Team",
+        "subtitle": "From cabin crew to founders",
+        "cta": "Our Story",
+        "closeButton": "Close",
+        "timeline": {
+            "title": "The Journey",
+            "step1": {
+                "year": "2019",
+                "title": "First Meeting",
+                "desc": "Two flight attendants bonding over layover frustrations"
+            },
+            "step2": {
+                "year": "2020",
+                "title": "The Idea",
+                "desc": "What if we could connect crew with trusted locals?"
+            },
+            "step3": {
+                "year": "2023",
+                "title": "Launch",
+                "desc": "LAYO goes live for crew members worldwide"
+            },
+            "step4": {
+                "year": "2024",
+                "title": "Growing",
+                "desc": "50+ airlines, thousands of safe connections made"
+            }
+        }
     },
     "footer": {
         "readyTitle": "Ready to Enjoy Your Layover?",
