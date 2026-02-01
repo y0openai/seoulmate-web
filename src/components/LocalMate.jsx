@@ -30,7 +30,7 @@ const locals = [
         nameKey: 'localMate.card4.name',
         tagsKey: 'localMate.card4.tags',
         descKey: 'localMate.card4.desc',
-        image: '/assets/locals/ma_006.jpg'
+        image: '/assets/locals/ma_013.png'
     }
 ];
 
