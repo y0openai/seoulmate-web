@@ -92,35 +92,6 @@
         "videoHeadline": "忘れられない体験",
         "videoDescription": "Seoulmateのおかげで、忘れられないレイオーバーになりました。"
     },
-    "meetTheTeam": {
-        "title": "チームと出会う",
-        "subtitle": "客室乗務員から創業者へ",
-        "cta": "私たちのストーリー",
-        "closeButton": "閉じる",
-        "timeline": {
-            "title": "旅程",
-            "step1": {
-                "year": "2019",
-                "title": "最初の出会い",
-                "desc": "レイオーバーの不満を共有する二人の客室乗務員"
-            },
-            "step2": {
-                "year": "2020",
-                "title": "アイデア",
-                "desc": "クルーと信頼できる現地の人をつなげたら？"
-            },
-            "step3": {
-                "year": "2023",
-                "title": "ローンチ",
-                "desc": "世界中のクルーのためのLAYOがリリース"
-            },
-            "step4": {
-                "year": "2024",
-                "title": "成長",
-                "desc": "50社以上の航空会社、数千件の安全な出会い"
-            }
-        }
-    },
     "footer": {
         "readyTitle": "レイオーバーを楽しむ準備はいいですか？",
         "readyDesc": "アプリをダウンロードして、旅行を始めましょう。",

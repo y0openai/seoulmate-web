@@ -372,270 +372,68 @@
     }
 }
 
-/* ===== MEET THE TEAM CARD ===== */
+/* ===== OPTION 4: MIX-MEDIA LAYOUT ===== */
+/* Add founders illustration as subtle watermark on content side */
 
-.meet-team-card {
-    margin-top: var(--spacing-3xl);
-    padding: var(--spacing-2xl) var(--spacing-xl);
-    background: linear-gradient(
-        135deg,
-        rgba(190, 255, 0, 0.05),
-        rgba(190, 255, 0, 0.02)
-    );
-    border: 1px solid rgba(190, 255, 0, 0.15);
-    border-radius: 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.meet-team-card:hover {
-    background: linear-gradient(
-        135deg,
-        rgba(190, 255, 0, 0.08),
-        rgba(190, 255, 0, 0.04)
-    );
-    border-color: rgba(190, 255, 0, 0.25);
-    box-shadow: 0 8px 24px rgba(190, 255, 0, 0.1);
-}
-
-.meet-team-icon {
-    font-size: 48px;
-    margin-bottom: var(--spacing-md);
-}
-
-.meet-team-title {
-    font-size: clamp(20px, 3vw, 24px);
-    font-weight: 700;
-    color: var(--color-neon-lime);
-    margin: 0 0 var(--spacing-sm) 0;
-}
-
-.meet-team-subtitle {
-    font-size: clamp(14px, 2vw, 16px);
-    color: rgba(245, 245, 245, 0.7);
-    margin: 0 0 var(--spacing-lg) 0;
-}
-
-.meet-team-cta {
-    background: var(--color-neon-lime);
-    color: #000;
-    border: none;
-    padding: var(--spacing-sm) var(--spacing-xl);
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.meet-team-cta:hover {
-    background: #b8e600;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(190, 255, 0, 0.3);
-}
-
-/* ===== TEAM MODAL ===== */
-
-.team-modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(8px);
-    z-index: 9998;
-}
-
-.team-modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 700px;
-    max-height: 85vh;
-    background: linear-gradient(
-        135deg,
-        rgba(20, 20, 20, 0.98),
-        rgba(10, 10, 10, 0.98)
-    );
-    border: 1px solid rgba(190, 255, 0, 0.15);
-    border-radius: 24px;
-    padding: var(--spacing-3xl);
-    overflow-y: auto;
-    z-index: 9999;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-}
-
-.team-modal-close {
-    position: absolute;
-    top: var(--spacing-lg);
-    right: var(--spacing-lg);
-    background: rgba(190, 255, 0, 0.1);
-    border: 1px solid rgba(190, 255, 0, 0.2);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: var(--color-neon-lime);
-    transition: all 0.2s ease;
-}
-
-.team-modal-close:hover {
-    background: rgba(190, 255, 0, 0.2);
-    transform: rotate(90deg);
-}
-
-.team-modal-image {
-    text-align: center;
-    margin-bottom: var(--spacing-3xl);
-}
-
-.founders-illustration {
-    max-width: 200px;
-    height: auto;
-    filter: drop-shadow(0 8px 16px rgba(190, 255, 0, 0.2));
-}
-
-/* ===== TIMELINE ===== */
-
-.team-modal-timeline {
-    margin-top: var(--spacing-2xl);
-}
-
-.timeline-title {
-    font-size: clamp(24px, 4vw, 28px);
-    font-weight: 700;
-    color: var(--color-neon-lime);
-    text-align: center;
-    margin: 0 0 var(--spacing-2xl) 0;
-}
-
-.timeline-item {
-    display: flex;
-    gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-2xl);
+.founder-story-content-side {
     position: relative;
-    padding-left: var(--spacing-md);
+    overflow: hidden;
 }
 
-.timeline-item::before {
+.founder-story-content-side::before {
     content: '';
     position: absolute;
-    left: 0;
-    top: 8px;
-    bottom: -var(--spacing-2xl);
-    width: 2px;
-    background: linear-gradient(
-        180deg,
-        var(--color-neon-lime),
-        transparent
-    );
+    top: -20px;
+    right: -20px;
+    width: 180px;
+    height: 180px;
+    background-image: url('/assets/locals/download (8).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+    filter: brightness(1.2);
 }
 
-.timeline-item:last-child::before {
-    display: none;
+/* Ensure content stays above watermark */
+.founder-story-quote-mark,
+.founder-story-quote-wrapper,
+.founder-story-author,
+.founder-story-values-wrapper {
+    position: relative;
+    z-index: 1;
 }
 
-.timeline-year {
-    flex: 0 0 60px;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--color-neon-lime);
-    padding-top: 4px;
+/* Responsive adjustments for watermark */
+@media (max-width: 900px) {
+    .founder-story-content-side::before {
+        width: 140px;
+        height: 140px;
+        top: -10px;
+        right: -10px;
+        opacity: 0.06;
+    }
 }
-
-.timeline-content {
-    flex: 1;
-}
-
-.timeline-step-title {
-    font-size: clamp(18px, 2.5vw, 20px);
-    font-weight: 600;
-    color: rgba(245, 245, 245, 0.95);
-    margin: 0 0 var(--spacing-xs) 0;
-}
-
-.timeline-step-desc {
-    font-size: clamp(14px, 2vw, 16px);
-    color: rgba(245, 245, 245, 0.7);
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
 
 @media (max-width: 768px) {
-    .meet-team-card {
-        margin-top: var(--spacing-2xl);
-        padding: var(--spacing-xl) var(--spacing-lg);
-    }
-
-    .meet-team-icon {
-        font-size: 40px;
-    }
-
-    .team-modal {
-        padding: var(--spacing-2xl) var(--spacing-lg);
-        max-height: 90vh;
-    }
-
-    .team-modal-close {
-        top: var(--spacing-md);
-        right: var(--spacing-md);
-        width: 36px;
-        height: 36px;
-    }
-
-    .founders-illustration {
-        max-width: 160px;
-    }
-
-    .timeline-item {
-        gap: var(--spacing-md);
-        padding-left: var(--spacing-sm);
-    }
-
-    .timeline-year {
-        flex: 0 0 50px;
-        font-size: 16px;
+    .founder-story-content-side::before {
+        width: 120px;
+        height: 120px;
+        top: 10px;
+        right: 10px;
+        opacity: 0.05;
     }
 }
 
 @media (max-width: 480px) {
-    .meet-team-card {
-        padding: var(--spacing-lg) var(--spacing-md);
-    }
-
-    .team-modal {
-        padding: var(--spacing-xl) var(--spacing-md);
-        width: 95%;
-    }
-
-    .founders-illustration {
-        max-width: 140px;
-    }
-
-    .timeline-item {
-        flex-direction: column;
-        gap: var(--spacing-xs);
-    }
-
-    .timeline-year {
-        flex: none;
-        font-size: 14px;
-    }
-
-    .timeline-item::before {
-        left: -var(--spacing-sm);
+    .founder-story-content-side::before {
+        width: 100px;
+        height: 100px;
+        top: 20px;
+        right: 5px;
+        opacity: 0.04;
     }
 }
 
@@ -647,18 +445,6 @@
     }
 
     .founder-story-card:hover .founder-story-image {
-        transform: none;
-    }
-
-    .meet-team-card,
-    .meet-team-cta,
-    .team-modal-close {
-        transition: none;
-    }
-
-    .meet-team-card:hover,
-    .meet-team-cta:hover,
-    .team-modal-close:hover {
         transform: none;
     }
 }

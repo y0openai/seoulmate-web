@@ -92,35 +92,6 @@
         "videoHeadline": "잊지 못할 경험",
         "videoDescription": "서울메이트 덕분에 잊지 못할 레이오버를 보냈어요."
     },
-    "meetTheTeam": {
-        "title": "팀을 만나보세요",
-        "subtitle": "승무원에서 창업자로",
-        "cta": "우리의 이야기",
-        "closeButton": "닫기",
-        "timeline": {
-            "title": "여정",
-            "step1": {
-                "year": "2019",
-                "title": "첫 만남",
-                "desc": "레이오버의 아쉬움을 나누던 두 승무원"
-            },
-            "step2": {
-                "year": "2020",
-                "title": "아이디어",
-                "desc": "크루들을 검증된 로컬과 연결할 수 있다면?"
-            },
-            "step3": {
-                "year": "2023",
-                "title": "런칭",
-                "desc": "전 세계 승무원을 위한 LAYO 출시"
-            },
-            "step4": {
-                "year": "2024",
-                "title": "성장",
-                "desc": "50개 이상 항공사, 수천 건의 안전한 만남"
-            }
-        }
-    },
     "footer": {
         "readyTitle": "레이오버를 즐길 준비 되셨나요?",
         "readyDesc": "앱을 다운로드하고 여행을 시작해보세요.",

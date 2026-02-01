@@ -92,35 +92,6 @@
         "videoHeadline": "Unforgettable",
         "videoDescription": "Seoulmate made my layover unforgettable."
     },
-    "meetTheTeam": {
-        "title": "Meet the Team",
-        "subtitle": "From cabin crew to founders",
-        "cta": "Our Story",
-        "closeButton": "Close",
-        "timeline": {
-            "title": "The Journey",
-            "step1": {
-                "year": "2019",
-                "title": "First Meeting",
-                "desc": "Two flight attendants bonding over layover frustrations"
-            },
-            "step2": {
-                "year": "2020",
-                "title": "The Idea",
-                "desc": "What if we could connect crew with trusted locals?"
-            },
-            "step3": {
-                "year": "2023",
-                "title": "Launch",
-                "desc": "LAYO goes live for crew members worldwide"
-            },
-            "step4": {
-                "year": "2024",
-                "title": "Growing",
-                "desc": "50+ airlines, thousands of safe connections made"
-            }
-        }
-    },
     "footer": {
         "readyTitle": "Ready to Enjoy Your Layover?",
         "readyDesc": "Download the app and start your journey.",
